@@ -1,0 +1,24 @@
+时间： $ O(a) $ 。
+
+直接枚举 $ x $ 并判断即可。
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+#define int long long
+int a,b;
+int cnt,n;
+signed main()
+{
+  cin>>a>>b;
+  cin>>n;
+  for(int i=0; i<=a; i++)
+  {
+    if(n-i<=b&&n-i>=0)
+    {
+      cnt++;
+    }
+  }
+  cout<<cnt<<endl;
+}
+```
